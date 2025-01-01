@@ -39,7 +39,7 @@ def create_feature_matrix(df):
     # Apply weights to each feature
     weighted_title = title_matrix * 0.5  # Lower weight
     weighted_description = description_matrix * 1.0  # Medium weight
-    weighted_category = category_matrix * 3  # Higher weight
+    weighted_category = category_matrix * 1.2  # Higher weight
 
     # Combine all features
     combined_text_features = np.hstack([weighted_title, weighted_description, weighted_category])
